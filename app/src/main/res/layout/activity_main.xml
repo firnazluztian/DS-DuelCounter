@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".MainActivity"
+                android:background="@drawable/bg">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit"
+            android:hint="you can enter last score here"
+            android:background="#50000000"
+            android:textSize="20sp"
+            android:layout_weight="0"
+            android:gravity="center"
+            android:textColor="#f7f5f5"
+            android:typeface="monospace"
+            android:inputType="number"
+            android:maxLength="3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/score"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:gravity="center|left"
+            tools:text="0"
+            android:textSize="50dp"
+            android:hint="0"
+            android:background="@android:color/transparent"
+            android:paddingLeft="10dp"
+            android:typeface="serif"
+            android:textColor="#585c5f"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="win"
+            android:id="@+id/win"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:textSize="45sp"
+            android:layout_margin="5dp"
+            android:textColor="#f6f8fb"
+            android:typeface="monospace"
+            android:longClickable="false"
+            android:background="#50000000"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="lose"
+            android:id="@+id/lose"
+            android:layout_weight="3"
+            android:background="#50000000"
+            android:textSize="45sp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:textColor="#f6f8fb"
+            android:typeface="monospace"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="reset score"
+                android:id="@+id/reset"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:background="#50000000"
+                android:textSize="20sp"
+                android:layout_margin="5dp"
+                android:textColor="#f6f8fb"
+                android:textStyle="italic"
+                android:typeface="monospace"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="how many more until rank3?"
+                android:id="@+id/goal"
+                android:background="#50000000"
+                android:textSize="20sp"
+                android:layout_weight="2"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:textColor="#f6f8fb"
+                android:textStyle="normal"
+                android:typeface="monospace"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
